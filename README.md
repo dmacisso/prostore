@@ -49,4 +49,52 @@ npm i lucide-react
 npm i next-themes
   install themes
 npx shadcn@latest add dropdown-menu
+npx shadcn@latest add sheet
+npx shadcn@latest add card
 
+Vercel Storage (Neon)
+Prisma ORM
+npm i -D prisma @prisma/client
+
+
+
+Next steps:
+1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+3. Run prisma db pull to turn your database schema into a Prisma schema.
+4. Run prisma generate to generate the Prisma Client. You can then start querying 
+your database.
+5. Tip: Explore how you can extend the ORM with scalable connection pooling, global caching, and real-time database events. Read: https://pris.ly/cli/beyond-orm    
+
+More information in our documentation:
+https://pris.ly/d/getting-started
+
+Initial prisma and create a schema file.
+npx prisma init
+
+After creating and updating schema/models run the following to create a prisma client
+npx prisma generate
+
+Migrate the data to create tables in the database and name the migration init
+npx prisma migrate dev --name init
+
+
+See db in browser
+npx prisma studio
+
+To run the typescript file, run the following
+npx tsx ./db/seed
+
+Note:
+you may be prompted to install tsx@4.19.2 to proceed.
+
+$ npm i zod
+  Validator works in conjunction with typescript
+
+Neon serverless driver setup
+https://neon.tech/docs/serverless/serverless-driver
+npm install @neondatabase/serverless @prisma/adapter-neon ws
+npm i -D @types/ws bufferutil
+
+
+npx shadcn@latest add badge
