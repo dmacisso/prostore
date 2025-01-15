@@ -98,3 +98,5 @@ npm i -D @types/ws bufferutil
 
 
 npx shadcn@latest add badge
+
+https://authjs.dev/getting-started/adapters/prisma
